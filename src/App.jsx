@@ -22,10 +22,10 @@ createBrowserRouter(createRoutesFromElements(
     <Route path='menu' element={<Menu/>}/>
     <Route path='about us' element={<AboutUs/> }/>
     <Route path='reservation' element={<Reservation/>}>
-    
+  
      </Route>
 
-     <Route path='footer' element={<Footer/>}/>
+    
 
     { <Route path='*' element={<NotFound/>}/>  }
      </Route>

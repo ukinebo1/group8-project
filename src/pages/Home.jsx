@@ -20,7 +20,7 @@ const Home = () => {
         </div>
       </div>
       <div className="row-2">
-        <img src={image} alt="" />
+        <img src={image} alt="" className='row-one' />
       </div>
         </div>
        

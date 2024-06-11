@@ -6,6 +6,7 @@ const Menu = () => {
     <div>
     <FoodDisplay />
     
+    
     </div>
   )
 }
