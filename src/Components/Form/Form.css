@@ -7,9 +7,9 @@
   }
   .formDetails {
     width: 362px;
-    height: 582px;
+    /* height: 252px; */
     margin-top: 60px;
-    margin-bottom: 121px;
+    /* margin-bottom: 121px; */
     /* top: 152px;
     left: 469px;
     gap: 0px;
@@ -84,5 +84,6 @@
           border-radius: 24px;
           height: 48px;
           width: 180px;
+          margin-bottom: 10px;
       }
   }
