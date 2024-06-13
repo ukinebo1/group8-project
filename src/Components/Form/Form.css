@@ -1,0 +1,88 @@
+.formContainer {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* background-image: url(../../assets/Images/reservation\ picture.png); */
+    /* align-items: center; */
+  }
+  .formDetails {
+    width: 362px;
+    height: 582px;
+    margin-top: 60px;
+    margin-bottom: 121px;
+    /* top: 152px;
+    left: 469px;
+    gap: 0px;
+    opacity: 0px; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #FFFEFD;
+  }
+  .formDetails h1{
+      /* margin: 29px 75.6px 22px 75.6px; */
+      text-align: center;
+      font-weight: 700;
+      font-size: 32px;
+      /* margin-top: 60px; */
+      margin-bottom: 19px;
+  }
+  h1 span{
+      color: #990000;
+      ;
+  }
+  form{
+      /* display: flex; */
+      /* flex-direction: column; */
+      margin-left: 105px;
+      margin-right: 105px;
+  }
+  form>label{
+      font-weight: 400;
+      font-size: 16px;
+      color: #1A0000;
+  } 
+  form>input{
+      margin: 8px 0px;
+      background: #fff;
+      border-radius: 8px;
+      border: 1px solid #1A000080;
+      outline: none;
+      padding: 10px;
+      width: 362px;
+  /* height: 48px; */
+  
+  
+  }
+  form >button{
+      display: block;
+      margin: 32px auto;
+      width: 77px;
+  }
+  
+  @media screen and (max-width: 450px) {
+    .formDetails{
+        /* margin: 20px 43px 20px 0px; */
+    }
+      .formDetails h1{
+          font-size: 24px;
+      }
+      form{
+        /* margin-right: 10px; */
+        /* margin: 0px 20px; */
+      }
+      form >label{
+          font-size: 14px;
+      }
+      form >input{
+          border-radius: 8px;
+          width: 322px;
+          /* border: 1px solid #1A000080; */
+      }
+      form >button{
+          border-radius: 24px;
+          height: 48px;
+          width: 180px;
+      }
+  }
