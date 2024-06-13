@@ -12,6 +12,7 @@ import Home from './pages/Home'
 import Footer from './pages/Footer-pg'
  import NotFound from './pages/NotFound'
  import Rootlayout from './Layouts/RootLayout'
+import SeeMore from './pages/SeeMore'
 
 
 function App() {
@@ -28,6 +29,7 @@ createBrowserRouter(createRoutesFromElements(
     
 
     { <Route path='*' element={<NotFound/>}/>  }
+    <Route path='more' element={<SeeMore />} />
      </Route>
 ))
   return (
