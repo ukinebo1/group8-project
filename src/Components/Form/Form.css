@@ -45,7 +45,7 @@
   } 
   form>input{
       margin: 8px 0px;
-      background: #fff;
+      /* background: #fff; */
       border-radius: 8px;
       border: 1px solid #1A000080;
       outline: none;

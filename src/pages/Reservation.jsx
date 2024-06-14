@@ -1,10 +1,11 @@
-import Form from "../Components/Form/Form"
+import ReservationForm from "../Components/Form/Form"
+// import Form from "../Components/Form/Form"
 
 
 const Reservation = () => {
     return (
       <div>
-      <Form />
+      <ReservationForm />
   
       <p>
           

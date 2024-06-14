@@ -1,10 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartArrowDown, faSearch,} from '@fortawesome/free-solid-svg-icons';
+import { faCartArrowDown, faSearch, faBars} from '@fortawesome/free-solid-svg-icons';
 import logo from '../assets/Images/Frame 11.png'
 import { NavLink, Outlet } from 'react-router-dom'
 import rectangle3 from '../assets/Images/Rectangle 3.png'
+import { useState } from "react";
 
 const Rootlayout = () => {
+  const [isOpen, setIsOpen] = useState(false); // State for menu visibility
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+
   return (
     <div >
 <header className="header">
@@ -12,8 +17,11 @@ const Rootlayout = () => {
         <img src={logo} alt="" />
         <h1> <span>G</span>-Ate</h1>
        </div>
-    <nav> 
-        <div className='nav-links'>
+    <nav className={`nav ${isOpen ? 'open' : ''}`}>
+      <div className="hamburger-menu" onClick={toggleMenu}>
+      <FontAwesomeIcon icon={faBars} />
+        </div> 
+        <div className={`nav-links ${isOpen ? 'show' : 'hide'}`}>
         <NavLink to='/'
         style={({isActive})=>({
           color:isActive ? '#990000' : '#000'
