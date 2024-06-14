@@ -19,7 +19,7 @@ const Rootlayout = () => {
        </div>
     <nav className={`nav ${isOpen ? 'open' : ''}`}>
       <div className="hamburger-menu" onClick={toggleMenu}>
-      <FontAwesomeIcon icon={faBars} />
+      <FontAwesomeIcon icon={faBars} className="hamburgers-menu" />
         </div> 
         <div className={`nav-links ${isOpen ? 'show' : 'hide'}`}>
         <NavLink to='/'

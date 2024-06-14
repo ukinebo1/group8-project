@@ -18,6 +18,9 @@ header{
     margin-top: 2em;
 
 }
+.hamburgers-menu{
+    display: none;
+}
 .logo h1{
     margin-left: 10px;
     margin-bottom: 5px;
@@ -67,9 +70,6 @@ input{
     background: grey ;
     outline: none;
     border: none;
-}
-.nav-links{
-    display: none;
 }
 .flex-row-3 p{
     margin-top: 9px;
@@ -607,11 +607,12 @@ margin-bottom: 1.5em;
                 font-size: 15px;
                 margin-top: 5px;
             }
-.hamburger-menu{
-    /* display: block; */
-}
+            .hamburgers-menu{
+                display: block;
+            }
+
             .nav-links a{
-                display: none;
+                display: block;
                 background-color: #ffffff;
                 color: #000000;
                 margin: 15px;
@@ -623,12 +624,12 @@ margin-bottom: 1.5em;
             .nav-menu{
                 display: none;
             }
-             /* .nav-links{
+             .nav-links{
                 box-shadow: inset 5px 5px 12px #fff,
                 5px 5px 12px rgba(0, 0, 0,0.16);
                 width: 170px;
                 height: 300px;
-            }  */
+            } 
             .about-section-2-row-2 .p-1, .about-section-2-row-2 .p-2,.about-section-2-row-2 .p-3 {
                 font-size: 14px;
             }
