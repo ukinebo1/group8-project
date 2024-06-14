@@ -106,7 +106,7 @@ function DisplayMenu() {
             <p>Main Course</p>
             <button onClick={() => navigate("/more")}>See More</button>
           </div>
-          <div className="food-item">
+          <div className="food-item ">
             <div className="food-display-list">
               <div className="food-item">
                 <div className="food-item-img-container">

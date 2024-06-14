@@ -42,6 +42,9 @@
   .menuCardOne p span {
     color: #990000;
   }
+  .menuCardTwo{
+    margin-top: 20px;
+  }
   .menuCardTwo p {
     font-weight: 700;
     font-size: 40px;
@@ -104,7 +107,7 @@
     margin-bottom: 10px;
   }
   .last-food-item{
-    /* margin-top: 20px; */
+    margin-bottom: 20px;
   }
   
   /* mobile responsiveness */
