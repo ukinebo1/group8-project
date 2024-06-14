@@ -40,7 +40,7 @@ function DisplayMenu() {
           </div>
         </div>
         <div className="cardText menuCardTwo">
-          <p>Appertizer</p>
+          <p>Appetizer</p>
           <button onClick={() => navigate("/more")}>See More</button>
         </div>
         <div>
@@ -167,7 +167,7 @@ function DisplayMenu() {
             </div>
           </div>
           <div className="cardText menuCardTwo cardMenuDiv">
-            <p>Breverages</p>
+            <p>Beverages</p>
             <button onClick={() => navigate("/more")}>See More</button>
           </div>
           <div className="food-item last-food-item">
