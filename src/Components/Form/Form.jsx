@@ -13,17 +13,14 @@ function ReservationForm() {
     e.preventDefault();
 
     setIsSubmitting(true); // Set loading state
-// https://g-ate-resturant.onrender.com
-// https://jsonplaceholder.typicode.com/posts
+    // https://g-ate-resturant.onrender.com
+    // https://jsonplaceholder.typicode.com/posts
     try {
-      const response = await fetch(
-        "https://g-ate-resturant.onrender.com",
-        {
-          method: "POST",
-          body: JSON.stringify({ name, email, date, time, phoneNumber }),
-          headers: { "Content-Type": "application/json" },
-        }
-      );
+      const response = await fetch("https://g-ate-resturant.onrender.com", {
+        method: "POST",
+        body: JSON.stringify({ name, email, date, time, phoneNumber }),
+        headers: { "Content-Type": "application/json" },
+      });
 
       if (!response.ok) {
         throw new Error(
@@ -34,13 +31,14 @@ function ReservationForm() {
       const data = await response.json();
 
       // if (data.success) {
-        console.log("Reservation successful:", data);
-        // Show a success message to the user (e.g., modal or toast)
-        alert("Successful");
+      console.log("Reservation successful:", data);
+      // Show a success message to the user (e.g., modal or toast)
+      alert("Successful");
       // } else {
-        // console.warn("API response failed:", data);
-        // Handle API-specific errors (e.g., display an error message to the user)
+      // console.warn("API response failed:", data);
+      // Handle API-specific errors (e.g., display an error message to the user)
       // }
+      return data;
     } catch (error) {
       console.error("Error submitting reservation:", error);
       // Display a generic error message to the user
