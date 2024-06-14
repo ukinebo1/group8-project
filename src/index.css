@@ -607,9 +607,12 @@ margin-bottom: 1.5em;
                 font-size: 15px;
                 margin-top: 5px;
             }
+            .hamburgers-menu{
+                display: block;
+            }
 
             .nav-links a{
-                display: none;
+                display: block;
                 background-color: #ffffff;
                 color: #000000;
                 margin: 15px;
