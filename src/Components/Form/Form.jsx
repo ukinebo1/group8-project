@@ -16,7 +16,7 @@ function ReservationForm() {
     // https://g-ate-resturant.onrender.com
     // https://jsonplaceholder.typicode.com/posts
     try {
-      const response = await fetch("https://g-ate-resturant.onrender.com", {
+      const response = await fetch("https://g-ate-resturant.onrender.com/api/reserve", {
         method: "POST",
         body: JSON.stringify({ name, email, date, time, phoneNumber }),
         headers: { "Content-Type": "application/json" },

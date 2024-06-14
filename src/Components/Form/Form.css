@@ -66,10 +66,11 @@
   
   @media screen and (max-width: 450px) {
     .formDetails{
+        
         /* margin: 20px 43px 20px 0px; */
     }
       .formDetails h1{
-          font-size: 24px;
+          font-size: 34px;
       }
       form{
         /* margin-right: 10px; */

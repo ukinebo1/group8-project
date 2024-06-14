@@ -628,16 +628,20 @@ margin-bottom: 1.5em;
                 gap: 10px;
                 position: absolute;
                 top: 80px;
-                right: 20px;
+                right: 10px;
+                left: 10px;
                 background-color: #fff;
                 padding: 10px;
                 border-radius: 5px;
                 margin: 15px;
-                
+                /* font-size: 12px; */
                 box-shadow: inset 5px 5px 12px #fff,
                 5px 5px 12px rgba(0, 0, 0,0.16);
                 /* width: 170px; */
                 /* height: 200px; */
+            }
+            .nav-links a{
+                font-size: 16px;
             }
             .nav-links.show {
                 /* min-height: 30vh; */
