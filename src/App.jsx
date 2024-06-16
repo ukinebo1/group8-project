@@ -12,6 +12,8 @@ import Home from './pages/Home'
 import Footer from './pages/Footer-pg'
  import NotFound from './pages/NotFound'
  import Rootlayout from './Layouts/RootLayout'
+import SeeMore from './pages/SeeMore'
+import ReservationForm from './Components/Form/Form'
 
 
 function App() {
@@ -21,13 +23,14 @@ createBrowserRouter(createRoutesFromElements(
     <Route index  element={<Home/>}/>
     <Route path='menu' element={<Menu/>}/>
     <Route path='about us' element={<AboutUs/> }/>
-    <Route path='reservation' element={<Reservation/>}>
+    <Route path='reservation' element={<ReservationForm/>}>
   
      </Route>
 
     
 
     { <Route path='*' element={<NotFound/>}/>  }
+    <Route path='more' element={<SeeMore />} />
      </Route>
 ))
   return (
